@@ -33,28 +33,28 @@
     },
     "vnetAddressPrefix": {
       "type": "string",
-      "defaultValue": "192.168.0.0/16",
+      "defaultValue": "10.10.0.0/16",
       "metadata": {
         "description": "Virtual network address prefix"
       }
     },
     "trainingSubnetPrefix": {
       "type": "string",
-      "defaultValue": "192.168.0.0/24",
+      "defaultValue": "10.10.0.0/24",
       "metadata": {
         "description": "Training subnet address prefix"
       }
     },
     "scoringSubnetPrefix": {
       "type": "string",
-      "defaultValue": "192.168.1.0/24",
+      "defaultValue": "10.10.1.0/24",
       "metadata": {
         "description": "Scoring subnet address prefix"
       }
     },
     "azureBastionSubnetPrefix": {
       "type": "string",
-      "defaultValue": "192.168.250.0/27",
+      "defaultValue": "10.10.250.0/27",
       "metadata": {
         "description": "Bastion subnet address prefix"
       }
@@ -359,21 +359,21 @@
             },
             "vnetAddressPrefix": {
               "type": "string",
-              "defaultValue": "192.168.0.0/16",
+              "defaultValue": "10.10.0.0/16",
               "metadata": {
                 "description": "Virtual network address prefix"
               }
             },
             "trainingSubnetPrefix": {
               "type": "string",
-              "defaultValue": "192.168.0.0/24",
+              "defaultValue": "10.10.0.0/24",
               "metadata": {
                 "description": "Training subnet address prefix"
               }
             },
             "scoringSubnetPrefix": {
               "type": "string",
-              "defaultValue": "192.168.1.0/24",
+              "defaultValue": "10.10.1.0/24",
               "metadata": {
                 "description": "Scoring subnet address prefix"
               }
@@ -2123,9 +2123,9 @@
                     }
                   },
                   "imageReference": {
-                    "publisher": "microsoft-dsvm",
-                    "offer": "dsvm-win-2019",
-                    "sku": "server-2019",
+                    "publisher": "microsoftwindowsdesktop",
+                    "offer": "windows-11",
+                    "sku": "win11-22h2-pro",
                     "version": "latest"
                   }
                 },
@@ -2241,7 +2241,7 @@
             },
             "addressPrefix": {
               "type": "string",
-              "defaultValue": "192.168.250.0/27",
+              "defaultValue": "10.10.250.0/27",
               "metadata": {
                 "description": "The address prefix to use for the Bastion subnet"
               }
